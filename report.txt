@@ -1,0 +1,5 @@
+Library Report: Popular Books
+--------------------------------------------------
+Book: Algo, Issues: 1
+Book: Did, Issues: 1
+Book: Bambordiro, Issues: 0
