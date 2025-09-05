@@ -158,7 +158,7 @@ int main() {
                     break;
                 }
 
-                Book updatedBook = *it; // копія для редагування
+                Book updatedBook = *it;
 
                 std::cout << "Enter new title (leave empty to keep \"" << updatedBook.title << "\"): ";
                 std::string newTitle;
@@ -173,6 +173,7 @@ int main() {
                 std::cout << "Enter new year (leave empty to keep \"" << updatedBook.year << "\"): ";
                 std::string newYear;
                 std::getline(std::cin, newYear);
+
                 if (!newYear.empty()) updatedBook.year = std::stoi(newYear);
 
                 std::cout << "Enter new number of copies (leave empty to keep \"" << updatedBook.copies << "\"): ";
@@ -348,10 +349,10 @@ int main() {
                 std::getline(std::cin, newName);
                 if (!newName.empty()) updatedReader.firstName = newName;
 
-                std::cout << "Enter new surname (leave empty to keep \"" << updatedReader.firstName << "\"): ";
+                std::cout << "Enter new surname (leave empty to keep \"" << updatedReader.lastName << "\"): ";
                 std::string newSurname;
                 std::getline(std::cin, newSurname);
-                if (!newSurname.empty()) updatedReader.firstName = newSurname;
+                if (!newSurname.empty()) updatedReader.lastName = newSurname;
 
                 reader::update(updatedReader);
                 break;
